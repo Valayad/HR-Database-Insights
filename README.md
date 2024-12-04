@@ -1,6 +1,7 @@
 # HR-Database-Insights
 
-![](Intro_Image.jpg)
+![Intro image](https://github.com/user-attachments/assets/55e15393-4b77-4b89-9280-7c3b217ffd44)
+
 ---
 
 ## Introduction
@@ -39,8 +40,9 @@ SELECT p.BusinessEntityID, p.FirstName, p.LastName, e.JobTitle, e.BirthDate, e.M
 FROM person.Person p
 INNER JOIN HumanResources.Employee e ON p.BusinessEntityID = e.BusinessEntityID;
 
+![List Employees with Job Title and Department](https://github.com/user-attachments/assets/fc4bee23-4217-48e3-bc51-26ac14447a40)
 
-![](CREATEDATABASE.png)
+
 
 ## Query 2: Employees by Department
 
@@ -51,6 +53,9 @@ INNER JOIN HumanResources.Employee e ON p.BusinessEntityID = e.BusinessEntityID
 INNER JOIN HumanResources.EmployeeDepartmentHistory edh ON edh.BusinessEntityID = p.BusinessEntityID
 INNER JOIN HumanResources.Department d ON d.DepartmentID = edh.DepartmentID
 ORDER BY p.BusinessEntityID;
+
+![Employees by Department](https://github.com/user-attachments/assets/ffc327fa-fdf0-46dd-b56e-a5d9c7de3506)
+
 
 ## Query 3: Employees with Hire Date and Department
 
@@ -64,6 +69,9 @@ LEFT JOIN HumanResources.Employee e ON p.BusinessEntityID = e.BusinessEntityID
 LEFT JOIN HumanResources.Department d ON d.DepartmentID = edh.DepartmentID
 ORDER BY p.businessentityID;
 
+![Employees with Hire Date and Department](https://github.com/user-attachments/assets/8de5b590-3078-4449-85e4-f7357d485e3b)
+
+
 ## Query 4: Employees with Email Status
 
 
@@ -72,6 +80,9 @@ SELECT p.FirstName, p.LastName, e.hiredate, e.JobTitle, ea.EmailAddress,
 FROM person.Person p
 LEFT JOIN HumanResources.Employee e ON p.BusinessEntityID = e.BusinessEntityID
 LEFT JOIN person.EmailAddress ea ON ea.BusinessEntityID = p.BusinessEntityID;
+
+![Employees with Email Status](https://github.com/user-attachments/assets/03f4837e-c94b-457e-994e-ced47e7f36df)
+
 
 ## Query 5: Group Employees by Department and Job Title
 
@@ -82,6 +93,9 @@ INNER JOIN HumanResources.EmployeeDepartmentHistory edh ON e.BusinessEntityID = 
 INNER JOIN HumanResources.Department d ON d.DepartmentID = edh.DepartmentID
 GROUP BY d.Name
 ORDER BY d.Name;
+
+![Group Employees by Department and Job Title](https://github.com/user-attachments/assets/0fadd7ea-ea0c-44d8-a5da-4cbb6c23c67c)
+
 
 ## Query 6: Average Salary by Job Title
 
