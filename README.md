@@ -106,7 +106,7 @@ ORDER BY Hiredate;
 
 
 
-
+![](Employees Hired After 2009E.png)
 
 
 ## Recommendations
