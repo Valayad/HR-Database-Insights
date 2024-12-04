@@ -102,11 +102,8 @@ FROM HumanResources.employee
 GROUP BY hiredate
 HAVING COUNT(*) > 5
 ORDER BY Hiredate;
+![Employees Hired After 2009](https://github.com/user-attachments/assets/0e476cc3-58eb-4571-997f-3348ae0638dc)
 
-
-
-
-![](Employees Hired After 2009.png)
 
 
 ## Recommendations
