@@ -93,6 +93,9 @@ INNER JOIN humanresources.EmployeePayHistory eph ON eph.businessentityID = p.bus
 GROUP BY e.Jobtitle
 ORDER BY e.Jobtitle;
 
+![Average Salary by Job Title](https://github.com/user-attachments/assets/2333c4a5-e8e9-4b1f-a9f4-d68b8b74bcae)
+
+
 
 ## Query 7: Employees Hired After 2009
 
@@ -102,6 +105,8 @@ FROM HumanResources.employee
 GROUP BY hiredate
 HAVING COUNT(*) > 5
 ORDER BY Hiredate;
+
+
 ![Employees Hired After 2009](https://github.com/user-attachments/assets/0e476cc3-58eb-4571-997f-3348ae0638dc)
 
 
