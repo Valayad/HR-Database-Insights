@@ -1,6 +1,7 @@
 # HR-Database-Insights
 
-![Intro image](https://github.com/user-attachments/assets/55e15393-4b77-4b89-9280-7c3b217ffd44)
+![Intro image](https://github.com/user-attachments/assets/c49a0267-61ca-4b27-9780-8d4f45d4be50)
+
 
 ---
 
